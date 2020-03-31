@@ -7,22 +7,22 @@ public enum AdSizeType {
     BANNER, LARGE_BANNER, MEDIUM_RECTANGLE, FULL_BANNER, LEADERBOARD, SMART_BANNER;
 
     public static AdSize getAdSize(Object adSize) {
-      if (AdSizeType.BANNER.equals(adSize)) {
+      if (AdSizeType.BANNER.toString().equals(adSize.toString())) {
           return AdSize.BANNER;
       }
-      if (AdSizeType.LARGE_BANNER.equals(adSize)) {
+      if (AdSizeType.LARGE_BANNER.toString().equals(adSize.toString())) {
           return AdSize.LARGE_BANNER;
       }
-      if (AdSizeType.MEDIUM_RECTANGLE.equals(adSize)) {
+      if (AdSizeType.MEDIUM_RECTANGLE.toString().equals(adSize.toString())) {
           return AdSize.MEDIUM_RECTANGLE;
       }
-      if (AdSizeType.FULL_BANNER.equals(adSize)) {
+      if (AdSizeType.FULL_BANNER.toString().equals(adSize.toString())) {
           return AdSize.FULL_BANNER;
       }
-      if (AdSizeType.LEADERBOARD.equals(adSize)) {
+      if (AdSizeType.LEADERBOARD.equals(adSize.toString())) {
           return AdSize.LEADERBOARD;
       }
-      if (AdSizeType.SMART_BANNER.equals(adSize)) {
+      if (AdSizeType.SMART_BANNER.toString().equals(adSize.toString())) {
           return AdSize.SMART_BANNER;
       }
       return null;
